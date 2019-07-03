@@ -6,11 +6,11 @@
 
 	.header {
 		background-color: #fff;
-		position: relative;
-/*		実はrelativeじゃなくてこっち？
+		/*position: relative;*/
+		/*実はrelativeじゃなくてこっち？*/
     position: fixed;
     width: 100%;
-    z-index: 1;*/
+    z-index: 1;
 	}
 
 	.fa-headIcon {
