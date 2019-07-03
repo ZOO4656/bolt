@@ -7,6 +7,10 @@
 	.header {
 		background-color: #fff;
 		position: relative;
+/*		実はrelativeじゃなくてこっち？
+    position: fixed;
+    width: 100%;
+    z-index: 1;*/
 	}
 
 	.fa-headIcon {
@@ -209,7 +213,6 @@
 		text-align: center;
     height: 80px;
     padding-top: 15%;
-    transition-duration: 0.3s;
 	}
 
 	.nav__list li:hover {
@@ -246,6 +249,14 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 	.header {
 		background-color: #fff;
 		position: relative;
+/*		実はrelativeじゃなくてこっち？
+    position: fixed;
+    width: 100%;
+    z-index: 1;*/
+	}
+
+	.fa-headIcon {
+		color: gray;
 	}
 
 	.inner {
@@ -395,11 +406,15 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
     flex-direction: column;
 	}
 
+	.main__content__img div {
+		margin-bottom: 88px;
+	}
+
 	.main__content__img p {
 		color: #fff;
 		font-size: 16px;
 		text-align: center;
-		margin-bottom: 80px;
+		/*margin-bottom: 80px;*/
 	}
 
 	.nav {
@@ -421,6 +436,9 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 	.nav__list li{
 		width: 185px;
 		text-align: center;
+    height: 80px;
+    padding-top: 15%;
+    transition-duration: 0.3s;
 	}
 
 	.nav__list li:hover {
@@ -453,6 +471,10 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 	.header {
 		background-color: #fff;
 		position: relative;
+	}
+
+	.fa-headIcon {
+		color: gray;
 	}
 
 	.inner {
