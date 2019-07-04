@@ -722,7 +722,6 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 
 	.main__content_information h2 {
 		color: #fff;
-    padding-top: 70px;
     padding-bottom: 30px;
 		text-align: center;
 	}
@@ -747,7 +746,6 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 
 	.nav {
 		background-color: #f2f2f2;
-		padding-top: 50px;
 	}
 
 	.nav__list {
