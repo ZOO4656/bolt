@@ -163,18 +163,18 @@ transition-duration: 0.3s;
 }*/
 
 .main__box__content_note {
-	margin-top: 90px;
+	/*margin-top: 90px; 影響あり*/
 	display: flex;
 	justify-content: space-around;
   margin-right: auto;
   margin-left: auto;
-  width: 60%;
+  /*width: 60%; 影響あり*/
   line-height: 30px;
 }
 
-.main__box__button {
+/*.main__box__button { 影響あり
 	margin-left: 90px;
-}
+}*/
 
 .main__box__button > .button {
 	padding: 5px 12px;
@@ -240,7 +240,7 @@ transition-duration: 0.3s;
 }*/
 
 .nav__list__icon {
-	/*width: 185px;影響あり */
+	width: 185px;
 	text-align: center;
   height: 80px;
   padding-top: 25px;
@@ -262,11 +262,11 @@ transition-duration: 0.3s;
 	background-color: #74cfae;
 }
 
-	.footer__content {
-		color: #fff;
-		padding: 20px 0 25px;
-		text-align: right;
-	}
+.footer__content {
+	color: #fff;
+	padding: 20px 0 25px;
+	text-align: right;
+}
 
 /*ここから上はPC用 完成次第media screenを適用する
 PC用スタイルのレビュー後TAB用SP用を作成予定*/
@@ -297,13 +297,18 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 		margin-left: 180px;
 	}
 
+	.main__box__content_note {
+  	width: 60%;
+  	margin-top: 90px;
+	}
+
 	.main__content_information__inner {
 		padding-bottom: 100px;
 	}
 
-	.nav__list__icon {
-		width: 185px;
-	}
+	.main__box__button {
+	margin-left: 90px;
+}
 
 
 }
@@ -530,7 +535,7 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 }
 
 @media screen and (max-width: 767px) {
-	画面幅が767px以下のとき、SP用
+	/*画面幅が767px以下のとき、SP用*/
 
 	.inner {
 		width: 97%;
@@ -560,11 +565,10 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 	.main__box__button > .button {
 		background-color: #74cfae;
 		color: #fff;
-		font-size: 12px;
+		font-size: 20px;
 		padding: 14px 12px;
-		width: 40px;
 		cursor: pointer;
-		width: 65px;
+		width: 110px;
     text-decoration: none;
 	}
 
@@ -658,15 +662,19 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 		background-color: #f2f2f2;
 	}
 
-	.main__box__content > .inner {
-		padding-top: 60px;
-		padding-bottom: 70px;
+	.main__box__button {
+		margin-left: 0px;
 	}
 
 	.main__box__title {
 		font-size: 24px;
 		margin-bottom: 40px;
 	}
+
+/*	.main__box__title__inner {
+		width: 97%;
+		margin: 0 auto;
+	}*/
 
 	.main__box__content_img {
     display: flex;
@@ -694,8 +702,11 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 		margin-bottom: 80px;
 	}
 
+	.main__box__content_img a:last-child {
+		margin-bottom: 80px;
+	}
+
 	.main__box__content_note {
-    margin-top: 80px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -739,20 +750,29 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 		padding-top: 50px;
 	}
 
+	.nav__list {
+	  flex-direction: column;
+  	align-items: center;
+	}
+
 	.nav__list li{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-    height: 80px;
-    margin-left: 15px;
-    margin-right: 15px;
-    text-align: center;
+		width: 100%
 	}
 
 	.nav__list li:hover {
 		background-color: #fff;
 		cursor: pointer;
 		transition-duration: 0.3s;
+	}
+
+	.nav__list__icon {
+		width: 100%;
+	}
+
+	.nav > .inner {
+		width: 100%;
+		padding: 50px 15px;
+		box-sizing: border-box;
 	}
 
 	.nav_color {
