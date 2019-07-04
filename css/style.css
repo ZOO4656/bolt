@@ -6,7 +6,7 @@
 
 	.header {
 		background-color: #fff;
-    position: fixed; /*topとleftを明示的に0pxを指定する*/
+    position: fixed;
     width: 100%;
     z-index: 1;
     top: 0;
@@ -424,10 +424,6 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 		margin-bottom: 40px;
 	}
 
-/*	.main__box__button {
-		margin: 40px auto 70px;
-	}*/
-
 	.main__content_information {
 		background-color: #4e4e4e;
 	}
@@ -461,7 +457,6 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 		color: #fff;
 		font-size: 16px;
 		text-align: center;
-		/*margin-bottom: 80px;*/
 	}
 
 	.nav {
@@ -472,11 +467,6 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 		padding-top: 200px;
 		padding-bottom: 200px;
 	}
-
-/*	.nav__content {
-		width: 70%;
-		margin: 0 auto;
-	}*/
 
 	.nav__list {
 		display: flex;
@@ -683,10 +673,6 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
     font-size: 0;
 	}
 
-/*	.main__box__content_img a {
-		margin-left: 100px;
-	}*/
-
 	.main__box__content_img a {
 		opacity: 0.7;
 		transition-duration: 0.3s;
@@ -716,10 +702,6 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 	.main__box__content_text {
 		margin-bottom: 40px;
 	}
-
-/*	.main__box__button {
-		margin: 40px auto 70px;
-	}*/
 
 	.main__content_information {
 		background-color: #4e4e4e;
