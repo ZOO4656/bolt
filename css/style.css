@@ -1,153 +1,283 @@
-@media screen and (min-width: 1200px) {
+	/*全体スタイル*/
+
+.body_property { /*済*/
+	color: 	#333;
+	font-family: Lato;
+}
+
+.header { /*済*/
+	background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.fa-headIcon { /*済*/
+	color: gray;
+}
+
+/*.inner {*/ /*済*/
+/*	width: 1100px;　padに影響あり
+	margin: 0 auto;
+}*/
+
+.Raleway__font { /*済*/
+	font-family: Raleway;
+}
+
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 0 15px;
+}
+
+.button {
+	background-color: #74cfae;
+	color: #fff;
+	font-size: 12px;
+	padding: 14px 12px;
+	width: 45px;
+	cursor: pointer;
+  text-decoration: none;
+}
+
+.button__next {
+	text-align: center;
+	transition-duration: 0.3s;
+  display: inline-block;
+}
+
+.main {
+	padding-top: 70px;
+}
+
+.main__box__button > .button {
+	width: 65px;
+}
+
+.button:hover {
+	transition-duration: 0.3s;
+	color: #333
+}
+
+.humberger {
+	display: none;
+}
+
+.main__inner {
+	padding-top: 250px;
+	padding-bottom: 250px;
+}
+
+.main__box__top {
+	background-color: #f2f2f2;
+	text-align: center;
+}
+
+.main__box_text h1 {
+	color: #74cfae;
+	font-size: 90px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.main__box_text p {
+	font-size: 30px;
+	color: #c0c0c0;
+}
+
+.main__box__descBG {
+	background-color: #74cfae;
+}
+
+.main__box__desc__inner {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 50px;
+}
+
+.main__box__desc__inner img {
+	margin-right: 60px;
+	margin-left: 60px;
+}
+
+.main__item {
+	text-align: center;
+}
+
+.main__box__text {
+	color: #fff;
+}
+
+.main__box__text h2 {
+	font-size: 24px;
+	margin-bottom: 35px;
+}
+
+.main__box__text p {
+	font-size: 20px;
+  line-height: 30px;
+}
+
+.main__box__content {
+	text-align: center;
+	background-color: #f2f2f2;
+}
+
+.main__box__title__inner {
+	padding-top: 60px;
+	padding-bottom: 70px;
+}
+
+.main__box__title__inner h2 {
+	font-size: 24px;
+	margin-bottom: 40px;
+}
+
+.main__box__content_img {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 0;
+}
+
+.main__box__content_img a {
+	opacity: 0.7;
+/*	margin-left: 100px; padに影響あり*/
+transition-duration: 0.3s;
+}
+
+.main__box__content_img a:hover {
+	opacity: 1;
+	transition-duration: 0.3s;
+}
+
+/*横並びの画像の枚数が変更されてもnの前の数字部分を変更することで対応可能*/
+/*.main__box__content_img a:nth-child(3n+1) { padに影響あり
+	margin-left: 0;
+}
+
+.main__box__content_img a:nth-child(n+4) {
+	margin-top: 80px;
+}*/
+
+.main__box__content_note {
+	margin-top: 90px;
+	display: flex;
+	justify-content: space-around;
+  margin-right: auto;
+  margin-left: auto;
+  width: 60%;
+  line-height: 30px;
+}
+
+.main__box__button {
+	margin-left: 90px;
+}
+
+.main__box__button > .button {
+	padding: 5px 12px;
+ }
+
+.main__content_information {
+	background-color: #4e4e4e;
+}
+
+.main__content_information__inner {
+  padding-top: 70px;
+	/*padding-bottom: 100px; 影響あり*/
+}
+
+.main__content_information__inner h2 {
+	color: #fff;
+	font-size: 24px;
+  margin-bottom: 30px;
+	text-align: center;
+}
+
+.main__content__wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.main__content__img {
+	display: flex;
+	justify-content: space-around;
+}
+
+/*.main__content__img div:nth-child(n+2) { padに影響あり
+	margin-left: 180px;
+}*/
+
+.main__content__img p {
+	color: #fff;
+	font-size: 16px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.nav {
+	background-color: #f2f2f2;
+}
+
+.nav > .inner {
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+.nav__list {
+	display: flex;
+	justify-content: center;
+}
+
+/*	.nav__list li{
+	width: 185px;
+	text-align: center;
+  height: 80px;
+  padding-top: 25px;
+  transition-duration: 0.3s;
+}*/
+
+.nav__list__icon {
+	/*width: 185px;影響あり */
+	text-align: center;
+  height: 80px;
+  padding-top: 25px;
+  transition-duration: 0.3s;
+  display: inline-block;
+}
+
+.nav__list li:hover {
+	background-color: #fff;
+	cursor: pointer;
+	transition-duration: 0.3s;
+}
+
+.nav_color {
+	color: #74cfae;
+}
+
+.footer {
+	background-color: #74cfae;
+}
+
+	.footer__content {
+		color: #fff;
+		padding: 20px 0 25px;
+		text-align: right;
+	}
+
+/*ここから上はPC用 完成次第media screenを適用する
+PC用スタイルのレビュー後TAB用SP用を作成予定*/
+
+
+@media screen and (min-width: 1200px) { /*全体の適用をする際はmadia screenの外に記述する。その後ブレイクポイント部分のみのスタイルをつけるようにする*/
 /*画面幅が1200px以上のとき,PC用*/
-	.body_property {
-		color: 	#333;
-	}
-
-	.header {
-		background-color: #fff;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-    top: 0;
-    left: 0;
-	}
-
-	.fa-headIcon {
-		color: gray;
-	}
 
 	.inner {
 		width: 1100px;
 		margin: 0 auto;
-		font-family: Lato;
-	}
-
-	.Raleway__font {
-		font-family: Raleway;
-	}
-
-	.header__inner {
-		display: flex;
-		justify-content: space-between;
-		padding: 15px 0 15px;
-	}
-
-	.button {
-		background-color: #74cfae;
-		color: #fff;
-		font-size: 12px;
-		padding: 14px 12px;
-		width: 45px;
-		cursor: pointer;
-    text-decoration: none;
-	}
-
-	.button__next {
-		text-align: center;
-		transition-duration: 0.3s;
-	}
-
-	.main {
-		padding-top: 70px;
-	}
-
-	.main__box__button > .button {
-		width: 65px;
-	}
-
-	.button:hover {
-		transition-duration: 0.3s;
-		color: #333
-	}
-
-	.humberger {
-		display: none;
-	}
-
-	.main__box__top {
-		background-color: #f2f2f2;
-		text-align: center;
-		padding-top: 250px;
-		padding-bottom: 250px;
-	}
-
-	.main__box_text h1 {
-		color: #74cfae;
-		font-size: 90px;
-		font-weight: 700;
-		margin-bottom: 20px;
-	}
-
-	.main__box_text p {
-		font-size: 30px;
-		color: #c0c0c0;
-	}
-
-	.main__box__descBG {
-		background-color: #74cfae;
-	}
-
-	.main__box__desc {
-		display: flex;
-		justify-content: space-around;
-		padding-top: 50px;
-	}
-
-	.main__box__desc img {
-		margin-right: 60px;
-		margin-left: 60px;
-	}
-
-	.main__item {
-		text-align: center;
-	}
-
-	.main__box__text {
-		color: #fff;
-	}
-
-	.main__box__text h2 {
-		font-size: 24px;
-		margin-bottom: 35px;
-	}
-
-	.main__box__text p {
-		font-size: 20px;
-    line-height: 30px;
-	}
-
-	.main__box__content {
-		text-align: center;
-		background-color: #f2f2f2;
-	}
-
-	.main__box__content > .inner {
-		padding-top: 60px;
-		padding-bottom: 70px;
-	}
-
-	.main__box__title {
-		font-size: 24px;
-		margin-bottom: 40px;
-	}
-
-	.main__box__content_img {
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		font-size: 0;
-	}
-
-	.main__box__content_img a {
-		opacity: 0.7;
-		margin-left: 100px;
-		transition-duration: 0.3s;
-	}
-
-	.main__box__content_img a:hover {
-		opacity: 1;
-		transition-duration: 0.3s;
 	}
 
 	/*横並びの画像の枚数が変更されてもnの前の数字部分を変更することで対応可能*/
@@ -159,136 +289,31 @@
 		margin-top: 80px;
 	}
 
-	.main__box__content_note {
-		margin-top: 90px;
-		display: flex;
-		justify-content: space-around;
-    margin-right: auto;
-    margin-left: auto;
-    width: 60%;
-    line-height: 30px;
-	}
-
-	.main__box__button {
-		margin-left: 90px;
-	}
-
-	.main__content_information {
-		background-color: #4e4e4e;
-	}
-
-	.main__content_information > .inner {
-    padding-top: 70px;
-		padding-bottom: 100px;
-	}
-
-	.main__content_information h2 {
-		color: #fff;
-    margin-bottom: 30px;
-		text-align: center;
-	}
-
-	.main__content__wrapper {
-		display: flex;
-		justify-content: center;
-	}
-
-	.main__content__img {
-		display: flex;
-		justify-content: space-around;
+	.main__box__content_img a {
+		margin-left: 100px;
 	}
 
 	.main__content__img div:nth-child(n+2) {
 		margin-left: 180px;
 	}
 
-	.main__content__img p {
-		color: #fff;
-		font-size: 16px;
-		margin-top: 10px;
-		text-align: center;
+	.main__content_information__inner {
+		padding-bottom: 100px;
 	}
 
-	.nav {
-		background-color: #f2f2f2;
-	}
-
-	.nav > .inner {
-		padding-top: 200px;
-		padding-bottom: 200px;
-	}
-
-	.nav__list {
-		display: flex;
-		justify-content: center;
-	}
-
-	.nav__list li{
+	.nav__list__icon {
 		width: 185px;
-		text-align: center;
-    height: 80px;
-    padding-top: 25px;
-    transition-duration: 0.3s;
 	}
 
-	.nav__list li:hover {
-		background-color: #fff;
-		cursor: pointer;
-		transition-duration: 0.3s;
-	}
-
-	.nav_color {
-		color: #74cfae;
-	}
-
-	.footer {
-		background-color: #74cfae;
-	}
-
-	.footer__content {
-		color: #fff;
-		padding: 20px 0 25px;
-		text-align: right;
-	}
-
-/*ここから上はPC用 完成次第media screenを適用する
-PC用スタイルのレビュー後TAB用SP用を作成予定*/
 
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-	画面幅が768pxから1199pxまでのとき、TAB用
-	.body_property {
-		color: 	#333;
-	}
-
-	.header {
-		background-color: #fff;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-    top: 0;
-    left: 0;
-	}
-
-	.fa-headIcon {
-		color: gray;
-	}
+	/*画面幅が768pxから1199pxまでのとき、TAB用*/
 
 	.inner {
 		width: 97%;
 		margin: 0 auto;
-		font-family: Lato;
-	}
-
-	.Raleway__font {
-		font-family: Raleway;
-	}
-
-	.header__inner {
-		display: flex;
-		justify-content: space-between;
-		padding: 15px 0 15px;
 	}
 
 	.header__item {
@@ -308,6 +333,7 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 	.button__next {
 		text-align: center;
 		transition-duration: 0.3s;
+  	display: inline-block;
 	}
 
 	.main {
@@ -328,11 +354,14 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 		display: none;
 	}
 
+	.main__inner {
+		padding-top: 250px;
+		padding-bottom: 250px;
+	}
+
 	.main__box__top {
 		background-color: #f2f2f2;
 		text-align: center;
-		padding-top: 250px;
-		padding-bottom: 250px;
 	}
 
 	.main__box_text h1 {
@@ -351,7 +380,7 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 		background-color: #74cfae;
 	}
 
-	.main__box__desc {
+	.main__box__desc__inner {
 	  display: flex;
 	  flex-direction: column;
 	  justify-content: center;
@@ -395,7 +424,6 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 	.main__box__content_img {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     font-size: 0;
 	}
@@ -470,16 +498,15 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 
 	.nav__list {
 		display: flex;
-		justify-content: space-around;
 	}
 
-	.nav__list li{
+/*	.nav__list li{
 		width: 185px;
 		text-align: center;
     height: 80px;
     padding-top: 25px;
     transition-duration: 0.3s;
-	}
+	}*/
 
 	.nav__list li:hover {
 		background-color: #fff;
@@ -504,37 +531,10 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 
 @media screen and (max-width: 767px) {
 	画面幅が767px以下のとき、SP用
-	.body_property {
-		color: 	#333;
-	}
-
-	.header {
-		background-color: #fff;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-    top: 0;
-    left: 0;
-	}
-
-	.fa-headIcon {
-		color: gray;
-	}
 
 	.inner {
 		width: 97%;
 		margin: 0 auto;
-		font-family: Lato;
-	}
-
-	.Raleway__font {
-		font-family: Raleway;
-	}
-
-	.header__inner {
-		display: flex;
-    justify-content: space-between;
-    padding: 15px 0 15px;
 	}
 
 	.header__item {
@@ -597,11 +597,14 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 		padding-top: 62px;
 	}
 
+	.main__inner {
+		padding-top: 160px;
+    padding-bottom: 130px;
+	}
+
 	.main__box__top {
 		background-color: #f2f2f2;
 		text-align: center;
-		padding-top: 160px;
-    padding-bottom: 130px;
 	}
 
 	.main__box_text h1 {
@@ -620,7 +623,7 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 		background-color: #74cfae;
 	}
 
-	.main__box__desc {
+	.main__box__desc__inner {
     width: 97%;
     display: flex;
     flex-direction: column;
@@ -668,7 +671,6 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 	.main__box__content_img {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     font-size: 0;
 	}
