@@ -15,89 +15,81 @@
   </head>
   <body class="body_property">
     <header class="header">
-      <div class="inner">
-        <div class="header__inner">
-          <div class="header__item">
-            <a href=""><i class="fas fa-bolt fa-2x fa-headIcon"></i></a>
-          </div>
-          <a href="" class="button header__item">contact</a>
-<!--           <div class="button header__item">contact</div>
- -->          <buttom type="button" class="humberger">
-            <div></div>
-            <div></div>
-            <div></div>
-          </buttom>
+      <div class="inner header__inner">
+        <!-- <div class="header__inner"> --> <!-- header innerのタグを消して一つ上にやる 仮済--> <!-- 各要素の一番外の余白は大枠のpaddingで取るようにする 仮済-->
+        <div>
+          <i class="fas fa-bolt fa-2x fa-headIcon"></i> <!-- アイコンのaタグは不要 仮済-->
         </div>
+        <a href="" class="button button__next">contact</a> <!-- ホバーしたときは背景色ではなく、文字色を変化させる 仮済--> <!-- text-alignで中央よせさせる 仮済-->
+        <!-- フォントを明示的に指定する 全体的に 仮済-->
+        <!-- <div class="button header__item">contact</div> -->
+          <buttom type="button" class="humberger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </buttom>
+        <!-- </div> -->
       </div>
     </header>
-    <main>
+    <main class="main">
       <div class="main__box__top">
-        <div class="inner">
-          <div class="main__box_text">
+        <div class="inner main__box_text">
             <h1>Bolt Theme</h1>
             <p>FREE BOOTSTRAP THEMES</p>
-          </div>
         </div>
       </div>
-      <section>
-        <div class="main__box__descBG">
+      <section class="main__box__descBG">
           <div class="inner main__box__desc">
             <img src="img/iphone.png" class="main__item">
             <div class="main__box__text main__item">
-              <h1><font face ="Raleway"> WHAT WE CAN DO?</font></h1>
+              <h2 class="Raleway__font"> WHAT WE CAN DO?</h2>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
               </p>
             </div>
           </div>
-        </div>
       </section>
-      <article>
-        <div class="main__box__content">
-          <div class="inner">
-            <div class="main__box__title">
-              <h1><font face ="Raleway">OUR LATEST WORK</font></h1>
-            </div>
-            <div class="main__box__content_img">
-              <a href=""><img src="img/01.jpg" alt="画像1"></a>
-              <a href=""><img src="img/02.jpg" alt="画像2"></a>
-              <a href=""><img src="img/03.jpg" alt="画像3"></a>
-              <a href=""><img src="img/04.jpg" alt="画像4"></a>
-              <a href=""><img src="img/05.jpg" alt="画像5"></a>
-              <a href=""><img src="img/06.jpg" alt="画像6"></a>
-            </div>
+      <article class="main__box__content">
+        <div class="inner">
+          <div class="main__box__title">
+            <h2 class="Raleway__font">OUR LATEST WORK</h2>
           </div>
-          <div class="inner main__box__content_note">
-            <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.
+          <div class="main__box__content_img">
+            <a href=""><img src="img/01.jpg" alt="画像1"></a>
+            <a href=""><img src="img/02.jpg" alt="画像2"></a>
+            <a href=""><img src="img/03.jpg" alt="画像3"></a>
+            <a href=""><img src="img/04.jpg" alt="画像4"></a>
+            <a href=""><img src="img/05.jpg" alt="画像5"></a>
+            <a href=""><img src="img/06.jpg" alt="画像6"></a>
+          </div>
+          <div class="main__box__content_note"> <!-- この部分も含めてinnnerに入れるよう構造を変更する 仮済-->
+            <div class="main__box__content_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.
             </div>
             <div class="main__box__button">
-              <a href="" class="button">Emaile&nbsp;Me!</a> <!-- aタグの中で半角スペースを開けるためには&nbsp;が必要 -->
-              <!-- <div class="button">Emaile Me!</div> -->
+              <a href="" class="button button__next">Emaile&nbsp;Me!</a> <!-- aタグの中で半角スペースを開けるためには&nbsp;が必要  -->
             </div>
           </div>
         </div>
       </article>
-      <section>
-        <div class="main__content_information">
-          <div class="inner">
-            <h2>OUR SKILLS</h2>
-            <div class="main__content__wrapper">
-              <div class="main__content__img">
-                <div>
-                  <img src="img/circle_01.png" alt="">
-                  <p>JavaScript</p>
-                </div>
-                <div>
-                  <img src="img/circle_02.png" alt="">
-                  <p>Bootstrap</p>
-                </div>
-                <div>
-                  <img src="img/circle_03.png" alt="">
-                  <p>WordPress</p>
-                </div>
-                <div>
-                  <img src="img/circle_04.png" alt="">
-                  <p>Photoshop</p>
-                </div>
+      <section class="main__content_information">
+        <div class="inner">
+          <h2>OUR SKILLS</h2>
+          <div class="main__content__wrapper">
+            <div class="main__content__img">
+              <div>
+                <img src="img/circle_01.png" alt="">
+                <p>JavaScript</p>
+              </div>
+              <div>
+                <img src="img/circle_02.png" alt="">
+                <p>Bootstrap</p>
+              </div>
+              <div>
+                <img src="img/circle_03.png" alt="">
+                <p>WordPress</p>
+              </div>
+              <div>
+                <img src="img/circle_04.png" alt="">
+                <p>Photoshop</p>
               </div>
             </div>
           </div>
@@ -105,21 +97,18 @@
       </section>
       <nav class="nav">
         <div class="inner">
-          <div class="nav__content">
-            <ul class="nav__list">
-              <a href=""><li><i class="fab fa-facebook-f fa-3x nav_color"></i></li></a>
-              <a href=""><li><i class="fas fa-basketball-ball fa-3x nav_color"></i></li></a>
-              <a href=""><li><i class="fab fa-twitter fa-3x nav_color"></i></li></a>
-              <a href=""><li><i class="fas fa-envelope fa-3x nav_color"></i></li></a>
-                <!-- <i class="far fa-envelope fa-3x nav_color"></i></li> -->
-            </ul>
-          </div>
+          <ul class="nav__list">
+            <li><a href=""><i class="fab fa-facebook-f fa-3x nav_color"></i></a></li>
+            <li><a href=""><i class="fas fa-basketball-ball fa-3x nav_color"></i></a></li>
+            <li><a href=""><i class="fab fa-twitter fa-3x nav_color"></i></a></li>
+            <li><a href=""><i class="fas fa-envelope fa-3x nav_color"></i></a></li>
+          </ul>
         </div>
       </nav>
     </main>
     <footer class="footer">
-      <div class ="inner">
-        Createdwith ♥by BlackTie.co.
+      <div class ="inner footer__content">
+        <p>Createdwith ♥by BlackTie.co.</p>
       </div>
     </footer>
   </body>

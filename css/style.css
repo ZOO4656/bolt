@@ -6,11 +6,11 @@
 
 	.header {
 		background-color: #fff;
-		/*position: relative;*/
-		/*実はrelativeじゃなくてこっち？*/
-    position: fixed;
+    position: fixed; /*topとleftを明示的に0pxを指定する*/
     width: 100%;
     z-index: 1;
+    top: 0;
+    left: 0;
 	}
 
 	.fa-headIcon {
@@ -20,15 +20,17 @@
 	.inner {
 		width: 1100px;
 		margin: 0 auto;
+		font-family: Lato;
+	}
+
+	.Raleway__font {
+		font-family: Raleway;
 	}
 
 	.header__inner {
 		display: flex;
-		justify-content: space-around;
-	}
-
-	.header__item {
-		margin: 15px 0;
+		justify-content: space-between;
+		padding: 15px 0 15px;
 	}
 
 	.button {
@@ -41,14 +43,22 @@
     text-decoration: none;
 	}
 
+	.button__next {
+		text-align: center;
+		transition-duration: 0.3s;
+	}
+
+	.main {
+		padding-top: 70px;
+	}
+
 	.main__box__button > .button {
 		width: 65px;
-    text-decoration: none;
 	}
 
 	.button:hover {
 		transition-duration: 0.3s;
-		background-color: #333
+		color: #333
 	}
 
 	.humberger {
@@ -58,6 +68,8 @@
 	.main__box__top {
 		background-color: #f2f2f2;
 		text-align: center;
+		padding-top: 250px;
+		padding-bottom: 250px;
 	}
 
 	.main__box_text h1 {
@@ -65,23 +77,21 @@
 		font-size: 90px;
 		font-weight: 700;
 		margin-bottom: 20px;
-		padding-top: 250px;
 	}
 
 	.main__box_text p {
 		font-size: 30px;
 		color: #c0c0c0;
-		padding-bottom: 250px;
 	}
 
 	.main__box__descBG {
 		background-color: #74cfae;
-
 	}
 
 	.main__box__desc {
 		display: flex;
 		justify-content: space-around;
+		padding-top: 50px;
 	}
 
 	.main__box__desc img {
@@ -90,7 +100,6 @@
 	}
 
 	.main__item {
-		margin-top: 50px;
 		text-align: center;
 	}
 
@@ -98,13 +107,14 @@
 		color: #fff;
 	}
 
-	.main__box__text h1 {
+	.main__box__text h2 {
 		font-size: 24px;
 		margin-bottom: 35px;
 	}
 
 	.main__box__text p {
 		font-size: 20px;
+    line-height: 30px;
 	}
 
 	.main__box__content {
@@ -112,9 +122,13 @@
 		background-color: #f2f2f2;
 	}
 
+	.main__box__content > .inner {
+		padding-top: 60px;
+		padding-bottom: 70px;
+	}
+
 	.main__box__title {
 		font-size: 24px;
-		padding-top: 60px;
 		margin-bottom: 40px;
 	}
 
@@ -126,9 +140,9 @@
 	}
 
 	.main__box__content_img a {
-		/*text-decoration: none;*/
 		opacity: 0.7;
 		margin-left: 100px;
+		transition-duration: 0.3s;
 	}
 
 	.main__box__content_img a:hover {
@@ -141,18 +155,18 @@
 		margin-left: 0;
 	}
 
-	.main__box__content_img a:nth-child(n+4):nth-child(-n+6) {
+	.main__box__content_img a:nth-child(n+4) {
 		margin-top: 80px;
 	}
 
 	.main__box__content_note {
 		margin-top: 90px;
-		padding-bottom: 70px;
 		display: flex;
 		justify-content: space-around;
     margin-right: auto;
     margin-left: auto;
     width: 60%;
+    line-height: 30px;
 	}
 
 	.main__box__button {
@@ -163,17 +177,20 @@
 		background-color: #4e4e4e;
 	}
 
+	.main__content_information > .inner {
+    padding-top: 70px;
+		padding-bottom: 100px;
+	}
+
 	.main__content_information h2 {
 		color: #fff;
-    padding-top: 70px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 		text-align: center;
 	}
 
 	.main__content__wrapper {
 		display: flex;
 		justify-content: center;
-		padding-bottom: 100px;
 	}
 
 	.main__content__img {
@@ -194,25 +211,24 @@
 
 	.nav {
 		background-color: #f2f2f2;
+	}
+
+	.nav > .inner {
 		padding-top: 200px;
 		padding-bottom: 200px;
 	}
 
-	.nav__content {
-		width: 70%;
-		margin: 0 auto;
-	}
-
 	.nav__list {
 		display: flex;
-		justify-content: space-around;
+		justify-content: center;
 	}
 
 	.nav__list li{
 		width: 185px;
 		text-align: center;
     height: 80px;
-    padding-top: 15%;
+    padding-top: 25px;
+    transition-duration: 0.3s;
 	}
 
 	.nav__list li:hover {
@@ -229,7 +245,7 @@
 		background-color: #74cfae;
 	}
 
-	.footer div{
+	.footer__content {
 		color: #fff;
 		padding: 20px 0 25px;
 		text-align: right;
@@ -248,11 +264,11 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 
 	.header {
 		background-color: #fff;
-		position: relative;
-/*		実はrelativeじゃなくてこっち？
     position: fixed;
     width: 100%;
-    z-index: 1;*/
+    z-index: 1;
+    top: 0;
+    left: 0;
 	}
 
 	.fa-headIcon {
@@ -262,12 +278,17 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 	.inner {
 		width: 97%;
 		margin: 0 auto;
+		font-family: Lato;
+	}
+
+	.Raleway__font {
+		font-family: Raleway;
 	}
 
 	.header__inner {
 		display: flex;
-	    justify-content: space-between;
-        	: 0 35px;
+		justify-content: space-between;
+		padding: 15px 0 15px;
 	}
 
 	.header__item {
@@ -284,6 +305,15 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
     text-decoration: none;
 	}
 
+	.button__next {
+		text-align: center;
+		transition-duration: 0.3s;
+	}
+
+	.main {
+		padding-top: 70px;
+	}
+
 	.main__box__button > .button {
 		width: 65px;
     text-decoration: none;
@@ -291,7 +321,7 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 
 	.button:hover {
 		transition-duration: 0.3s;
-		background-color: #333
+		color: #333
 	}
 
 	.humberger {
@@ -301,6 +331,8 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 	.main__box__top {
 		background-color: #f2f2f2;
 		text-align: center;
+		padding-top: 250px;
+		padding-bottom: 250px;
 	}
 
 	.main__box_text h1 {
@@ -308,13 +340,11 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 		font-size: 90px;
 		font-weight: 700;
 		margin-bottom: 20px;
-		padding-top: 250px;
 	}
 
 	.main__box_text p {
 		font-size: 30px;
 		color: #c0c0c0;
-		padding-bottom: 250px;
 	}
 
 	.main__box__descBG {
@@ -326,10 +356,11 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 	  flex-direction: column;
 	  justify-content: center;
 	  align-items: center;
+	  padding-top: 50px;
+	  padding-bottom: 25px;
 	}
 
 	.main__item {
-		margin-top: 50px;
 		text-align: center;
 	}
 
@@ -340,24 +371,24 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 		margin-top: 20px;
 	}
 
-	.main__box__text h1 {
+	.main__box__text h2 {
 		font-size: 24px;
-		margin-bottom: 35px;
+		margin-bottom:35px;
 	}
 
 	.main__box__text p {
 		font-size: 20px;
-		margin-bottom: 25px;
 	}
 
 	.main__box__content {
 		text-align: center;
 		background-color: #f2f2f2;
+		padding-top: 60px;
+    padding-bottom: 70px;
 	}
 
 	.main__box__title {
 		font-size: 24px;
-		padding-top: 60px;
 		margin-bottom: 40px;
 	}
 
@@ -369,28 +400,44 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
     font-size: 0;
 	}
 
+		.main__box__content_img a {
+		opacity: 0.7;
+		transition-duration: 0.3s;
+	}
+
+	.main__box__content_img a:hover {
+		opacity: 1;
+		transition-duration: 0.3s;
+	}
+
 	.main__box__content_img a:nth-child(3n) {
 		margin-bottom: 80px;
 	}
 
 	.main__box__content_note {
-    padding-bottom: 70px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 	}
 
-	.main__box__button {
-		margin: 40px auto 70px;
+	.main__box__content_text {
+		margin-bottom: 40px;
 	}
+
+/*	.main__box__button {
+		margin: 40px auto 70px;
+	}*/
 
 	.main__content_information {
 		background-color: #4e4e4e;
 	}
 
+	.main__content_information > .inner {
+    padding-top: 70px;
+	}
+
 	.main__content_information h2 {
 		color: #fff;
-    padding-top: 70px;
     padding-bottom: 30px;
 		text-align: center;
 	}
@@ -419,14 +466,17 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 
 	.nav {
 		background-color: #f2f2f2;
+	}
+
+		.nav > .inner {
 		padding-top: 200px;
 		padding-bottom: 200px;
 	}
 
-	.nav__content {
+/*	.nav__content {
 		width: 70%;
 		margin: 0 auto;
-	}
+	}*/
 
 	.nav__list {
 		display: flex;
@@ -437,7 +487,7 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 		width: 185px;
 		text-align: center;
     height: 80px;
-    padding-top: 15%;
+    padding-top: 25px;
     transition-duration: 0.3s;
 	}
 
@@ -455,7 +505,7 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 		background-color: #74cfae;
 	}
 
-	.footer div{
+	.footer__content {
 		color: #fff;
 		padding: 20px 0 25px;
 		text-align: right;
@@ -470,7 +520,11 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 
 	.header {
 		background-color: #fff;
-		position: relative;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
 	}
 
 	.fa-headIcon {
@@ -480,12 +534,17 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 	.inner {
 		width: 97%;
 		margin: 0 auto;
+		font-family: Lato;
+	}
+
+	.Raleway__font {
+		font-family: Raleway;
 	}
 
 	.header__inner {
 		display: flex;
-	    justify-content: space-between;
-        padding-left: 25px;
+    justify-content: space-between;
+    padding: 15px 0 15px;
 	}
 
 	.header__item {
@@ -505,11 +564,11 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 
 	.button:hover {
 		transition-duration: 0.3s;
-		background-color: #333
+		color: #333
 	}
 
 	.main__box__button > .button {
-			background-color: #74cfae;
+		background-color: #74cfae;
 		color: #fff;
 		font-size: 12px;
 		padding: 14px 12px;
@@ -586,7 +645,7 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 		margin: auto;
 	}
 
-	.main__box__text h1 {
+	.main__box__text h2 {
 		font-size: 24px;
 		margin-top: 20px;
 		margin-bottom: 35px;
@@ -632,9 +691,13 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
     flex-direction: column;
 	}
 
-	.main__box__button {
-		margin: 40px auto 70px;
+	.main__box__content_text {
+		margin-bottom: 40px;
 	}
+
+/*	.main__box__button {
+		margin: 40px auto 70px;
+	}*/
 
 	.main__content_information {
 		background-color: #4e4e4e;
@@ -694,7 +757,7 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 		background-color: #74cfae;
 	}
 
-	.footer div{
+	.footer__content {
 		color: #fff;
 		padding: 20px 0 25px;
 		text-align: right;
