@@ -287,7 +287,6 @@ body {
 		color: #fff;
 		font-size: 12px;
 		padding: 14px 12px;
-		width: 40px;
 		cursor: pointer;
     text-decoration: none;
 	}
@@ -299,7 +298,6 @@ body {
 	}
 
 	.main__box__button > .button {
-		width: 65px;
     text-decoration: none;
 	}
 
