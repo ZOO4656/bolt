@@ -400,7 +400,7 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
     font-size: 0;
 	}
 
-		.main__box__content_img a {
+	.main__box__content_img a {
 		opacity: 0.7;
 		transition-duration: 0.3s;
 	}
@@ -603,9 +603,15 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 		box-sizing: border-box;
 	}
 
+	.main {
+		padding-top: 62px;
+	}
+
 	.main__box__top {
 		background-color: #f2f2f2;
 		text-align: center;
+		padding-top: 160px;
+    padding-bottom: 130px;
 	}
 
 	.main__box_text h1 {
@@ -613,47 +619,45 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
     font-size: 80px;
     font-weight: 700;
     margin-bottom: 20px;
-    padding-top: 160px;
 	}
 
 	.main__box_text p {
 		font-size: 30px;
 		color: #c0c0c0;
-		padding-bottom: 130px;
 	}
 
 	.main__box__descBG {
 		background-color: #74cfae;
-
 	}
 
 	.main__box__desc {
-    width: 100%;
+    width: 97%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 50px;
 	}
 
 	.main__item {
-		margin-top: 50px;
 		text-align: center;
 	}
 
 	.main__box__text {
 		color: #fff;
 		margin: auto;
+		padding-top: 20px;
+		padding-bottom: 25px;
 	}
 
 	.main__box__text h2 {
 		font-size: 24px;
-		margin-top: 20px;
 		margin-bottom: 35px;
 	}
 
 	.main__box__text p {
 		font-size: 20px;
-		margin-bottom: 25px;
+		line-height: 25px;
 	}
 
 	.main__box__content {
@@ -661,9 +665,13 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 		background-color: #f2f2f2;
 	}
 
+	.main__box__content > .inner {
+		padding-top: 60px;
+		padding-bottom: 70px;
+	}
+
 	.main__box__title {
 		font-size: 24px;
-		padding-top: 60px;
 		margin-bottom: 40px;
 	}
 
@@ -675,8 +683,23 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
     font-size: 0;
 	}
 
+/*	.main__box__content_img a {
+		margin-left: 100px;
+	}*/
+
 	.main__box__content_img a {
+		opacity: 0.7;
+		transition-duration: 0.3s;
 		width: 95%;
+	}
+
+	.main__box__content_img a:hover {
+		opacity: 1;
+		transition-duration: 0.3s;
+	}
+
+	.main__box__content_img img {
+		width: 100%;
 	}
 
 	.main__box__content_img a:nth-child(3) {
@@ -685,7 +708,6 @@ PC用スタイルのレビュー後TAB用SP用を作成予定*/
 
 	.main__box__content_note {
     margin-top: 80px;
-    padding-bottom: 70px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
