@@ -282,30 +282,6 @@ body {
 		margin: 15px 0;
 	}
 
-	.button {
-		background-color: #74cfae;
-		color: #fff;
-		font-size: 12px;
-		padding: 14px 12px;
-		cursor: pointer;
-    text-decoration: none;
-	}
-
-	.button__next {
-		text-align: center;
-		transition-duration: 0.3s;
-  	display: inline-block;
-	}
-
-	.main__box__button > .button {
-    text-decoration: none;
-	}
-
-	.button:hover {
-		transition-duration: 0.3s;
-		color: #333
-	}
-
 	.main__inner {
 		padding-top: 250px;
 		padding-bottom: 250px;
@@ -339,11 +315,6 @@ body {
     align-items: center;
 	}
 
-	.main__box__content_img a:hover {
-		opacity: 1;
-		transition-duration: 0.3s;
-	}
-
 	.main__box__content_img a:nth-child(3n) {
 		margin-bottom: 80px;
 	}
@@ -364,18 +335,6 @@ body {
 	.main__content__img {
 		margin-bottom: 88px;
 	}
-
-	.main__content__img p {
-		color: #fff;
-		font-size: 16px;
-		text-align: center;
-	}
-
-	.nav__list li:hover {
-		background-color: #fff;
-		cursor: pointer;
-		transition-duration: 0.3s;
-	}
 }
 
 @media screen and (max-width: 767px) {
@@ -391,14 +350,7 @@ body {
 	}
 
 	.header__inner > .button {
-		background-color: #74cfae;
-		color: #fff;
-		font-size: 12px;
-		padding: 14px 12px;
-		width: 40px;
-		cursor: pointer;
-    text-decoration: none;
-		display: none; /*後にハンバーガーメニュー以下に表示する。*/
+		display: none;
 	}
 
 	.button:hover {
@@ -508,10 +460,6 @@ body {
     flex-direction: column;
 	}
 
-	.nav {
-		background-color: #f2f2f2;
-	}
-
 	.nav__list {
 	  flex-direction: column;
   	align-items: center;
@@ -519,12 +467,6 @@ body {
 
 	.nav__list li{
 		width: 100%
-	}
-
-	.nav__list li:hover {
-		background-color: #fff;
-		cursor: pointer;
-		transition-duration: 0.3s;
 	}
 
 	.nav__list__icon {
