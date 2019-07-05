@@ -45,6 +45,7 @@ body {
 
 .main {
 	padding-top: 70px;
+	background-color: #f2f2f2;
 }
 
 .button:hover {
@@ -62,7 +63,6 @@ body {
 }
 
 .main__box__top {
-	background-color: #f2f2f2;
 	text-align: center;
 }
 
@@ -363,10 +363,7 @@ body {
 	}
 
 	.humberger {
-    position: absolute;
-    right: 5%;
-    top: 20%;
-    bottom: 20%;
+    position: relative;
     width: 40px;
     padding: 10px;
     border: 1px solid #ddd;
@@ -377,14 +374,23 @@ body {
     box-sizing: border-box;
 	}
 
-	.humberger div {
-		position: relative;
-		height: 2px;
-		width: auto;
-		background-color: #ddd;
-		border-radius: 2px;
-		display: inline-block;
-		box-sizing: border-box;
+	.humberger__line {
+		position: absolute;
+	  left: 7px;
+	  height: 2px;
+	  width: 24px;
+	  background-color: #ddd;
+	  border-radius: 2px;
+	  display: inline-block;
+	  box-sizing: border-box;
+	}
+
+	.humberger__line:nth-child(1) {
+		top: 8px;
+	}
+
+	.humberger__line:nth-child(3) {
+		bottom: 8px;
 	}
 
 	.main {
