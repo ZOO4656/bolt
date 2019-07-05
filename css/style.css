@@ -313,10 +313,15 @@ body {
 	.main__box__content_img {
     flex-direction: column;
     align-items: center;
+    padding-bottom: 80px;
 	}
 
 	.main__box__content_img a:nth-child(3n) {
 		margin-bottom: 80px;
+	}
+
+	.main__box__content_img a:last-child {
+		margin-bottom: 0;
 	}
 
 	.main__box__content_note {
@@ -335,8 +340,15 @@ body {
 	.main__content__img {
 		margin-bottom: 88px;
 	}
-}
 
+	.nav__list li {
+		width: 25%;
+	}
+
+	.nav__list a {
+		width: 100%;
+	}
+}
 @media screen and (max-width: 767px) {
 	/*画面幅が767px以下のとき、SP用*/
 
@@ -416,7 +428,7 @@ body {
 
 	.main__box__text {
 		margin: auto;
-		padding-top: 20px;
+		margin-top: 20px;
 	}
 
 	.main__box__text h2 {
@@ -436,14 +448,15 @@ body {
 	.main__box__content_img {
     flex-direction: column;
     align-items: center;
+    padding-bottom: 80px;
 	}
 
-	.main__box__content_img a:nth-child(3) {
+	.main__box__content_img a:nth-child(3n) {
 		margin-bottom: 80px;
 	}
 
 	.main__box__content_img a:last-child {
-		margin-bottom: 80px;
+		margin-bottom: 0;
 	}
 
 	.main__box__content_note {
